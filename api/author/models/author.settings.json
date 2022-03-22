@@ -55,10 +55,6 @@
       "via": "author",
       "model": "bid"
     },
-    "nfts": {
-      "via": "author",
-      "collection": "nft"
-    },
     "author_sale": {
       "model": "author-sales"
     },
@@ -72,6 +68,10 @@
     "users_permissions_user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "nfts": {
+      "via": "author",
+      "collection": "nft"
     }
   }
 }

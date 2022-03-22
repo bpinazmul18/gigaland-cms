@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "nfts",
   "info": {
-    "name": "nft",
-    "description": ""
+    "name": "nft"
   },
   "options": {
     "increments": true,
@@ -13,8 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "unique_id": {
-      "type": "string",
-      "required": false
+      "type": "string"
     },
     "category": {
       "type": "enumeration",
@@ -71,8 +69,8 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
@@ -98,19 +96,18 @@
       "type": "text"
     },
     "views": {
-      "type": "integer",
-      "default": 0
+      "type": "integer"
     },
     "bids": {
-      "via": "nft",
-      "collection": "bid"
+      "collection": "bid",
+      "via": "nft"
     },
     "priceover": {
       "type": "float"
     },
     "author": {
-      "via": "nfts",
-      "model": "author"
+      "model": "author",
+      "via": "nfts"
     },
     "showcase": {
       "type": "boolean",

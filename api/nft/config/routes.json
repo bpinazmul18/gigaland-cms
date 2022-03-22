@@ -10,14 +10,6 @@
     },
     {
       "method": "GET",
-      "path": "/nft_showcases",
-      "handler": "nft.showcase",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
       "path": "/nfts/count",
       "handler": "nft.count",
       "config": {
