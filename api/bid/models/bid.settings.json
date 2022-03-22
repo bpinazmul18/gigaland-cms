@@ -15,13 +15,13 @@
     "value": {
       "type": "decimal"
     },
-    "nft": {
-      "via": "bids",
-      "model": "nft"
-    },
     "author": {
       "via": "bid",
       "model": "author"
+    },
+    "nft": {
+      "via": "bids",
+      "model": "nft"
     }
   }
 }
