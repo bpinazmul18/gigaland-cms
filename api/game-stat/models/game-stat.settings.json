@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_stats",
+  "info": {
+    "name": "game_stat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon_name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "number_of": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "nft": {
+      "via": "game_stats",
+      "model": "nft"
+    }
+  }
+}

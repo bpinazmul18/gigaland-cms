@@ -118,6 +118,14 @@
     },
     "audio_url": {
       "type": "string"
+    },
+    "game_stats": {
+      "collection": "game-stat",
+      "via": "nft"
+    },
+    "upgrades": {
+      "collection": "upgrade",
+      "via": "nft"
     }
   }
 }

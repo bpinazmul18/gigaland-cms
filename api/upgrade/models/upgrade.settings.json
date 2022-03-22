@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upgrades",
+  "info": {
+    "name": "upgrade",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "number_of": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "nft": {
+      "via": "upgrades",
+      "model": "nft"
+    }
+  }
+}

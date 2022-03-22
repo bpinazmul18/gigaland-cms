@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/upgrades",
+      "handler": "upgrade.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upgrades/count",
+      "handler": "upgrade.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upgrades/:id",
+      "handler": "upgrade.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/upgrades",
+      "handler": "upgrade.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/upgrades/:id",
+      "handler": "upgrade.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/upgrades/:id",
+      "handler": "upgrade.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
